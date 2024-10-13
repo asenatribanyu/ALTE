@@ -3,5 +3,29 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user/layouts/home');
+});
+
+Route::get('/forgot-password', function () {
+    return view('auth/forgot-password');
+});
+
+Route::get('/login', function () {
+    return view('auth/login');
+});
+
+Route::get('/register', function () {
+    return view('auth/register');
+});
+
+Route::get('/reset-password', function () {
+    return view('auth/reset-password');
+});
+
+Route::get('/verify', function () {
+    return view('auth/verify');
+});
+
+Route::get('/admin', function () {
+    return view('admin/layouts/dashboard');
 });
