@@ -43,9 +43,10 @@
                                 password with a new one to change the old passwords.</small>
                         </div>
                     </div>
-                    <form class="space-y-4 md:space-y-6" method="POST"">
+                    <form class="space-y-4 md:space-y-6" method="POST" action="{{ route('password.update') }}">
                         @csrf
                         <div>
+                            <input type="hidden" name="token" value="{{ request()->token }}">
                             <label for="email"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                             <input type="email" name="email" id="email"
