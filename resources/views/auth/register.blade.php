@@ -43,7 +43,7 @@
                             and don't forget to verify your account email.
                         </small>
                     </div>
-                    <form class="space-y-4 md:space-y-5" method="POST"">
+                    <form class="space-y-4 md:space-y-5" method="POST" action="{{ route('register') }}">
                         @csrf
                         <div>
                             <label for="name"
