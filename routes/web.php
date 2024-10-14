@@ -10,5 +10,21 @@ Route::get('/home', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin/layouts/dashboard');
+    return view('admin/pages/main');
+});
+
+Route::get('/admin/manage/files', function () {
+    return view('admin/pages/manageFiles');
+});
+
+Route::get('/admin/manage/users', function () {
+    return view('admin/pages/manageUsers');
+});
+
+Route::get('/admin/manage/users/add', function () {
+    return view('admin/pages/addUsers');
+});
+
+Route::get('/admin/manage/forms', function () {
+    return view('admin/pages/manageForms');
 });
