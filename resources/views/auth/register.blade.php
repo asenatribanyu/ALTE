@@ -56,6 +56,16 @@
                             @enderror
                         </div>
                         <div>
+                            <label for="npm"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NPM</label>
+                            <input type="string" name="npm" id="npm"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="" value="{{ old('npm') }}">
+                            @error('npm')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div>
                             <label for="email"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
                                 Address</label>
