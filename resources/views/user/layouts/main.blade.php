@@ -10,10 +10,15 @@
     <title>Home</title>
 </head>
 
-<body>
-    <header>
-        @include('user.partials.navbar')
-    </header>
+<body class="bg-gray-50 dark:bg-gray-900">
+    @include('user.partials.navbar')
+
+    <div class="max-md:px-2">
+        @yield('content')
+        @include('user.partials.footer')
+    </div>
+
+    <script src="{{ asset('js/global.js') }}"></script>
 </body>
 
 </html>
