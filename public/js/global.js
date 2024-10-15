@@ -65,3 +65,5 @@ const instanceOptions = {
     id: "carousel-example",
     override: true,
 };
+
+let table = new DataTable("#myTable");
