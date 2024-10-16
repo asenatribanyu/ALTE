@@ -1,33 +1,26 @@
-<div id="default-carousel" class="relative w-full my-5 h-72" data-carousel="slide">
-    <!-- Carousel wrapper -->
+<div id="large-carousel" class="relative w-full h-72" data-carousel="slide">
     <div class="relative h-full overflow-hidden rounded-lg">
-        <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="absolute inset-0 object-cover w-full h-full" alt="...">
         </div>
-        <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="absolute inset-0 object-cover w-full h-full" alt="...">
         </div>
-        <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://images.pexels.com/photos/1510595/pexels-photo-1510595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="absolute inset-0 object-cover w-full h-full" alt="...">
         </div>
-        <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://images.pexels.com/photos/315191/pexels-photo-315191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="absolute inset-0 object-cover w-full h-full" alt="...">
         </div>
-        <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://images.pexels.com/photos/259772/pexels-photo-259772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="absolute inset-0 object-cover w-full h-full" alt="...">
         </div>
     </div>
-    <!-- Slider indicators -->
     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
             data-carousel-slide-to="0"></button>
@@ -40,7 +33,6 @@
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
             data-carousel-slide-to="4"></button>
     </div>
-    <!-- Slider controls -->
     <button type="button"
         class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
         data-carousel-prev>

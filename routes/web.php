@@ -10,6 +10,19 @@ Route::get('/', function () {
     return view('user/pages/home',['formulirs'=> $Formulir]);
 });
 
+Route::get('/form', function () {
+    $Formulir = Formulir::all();
+    return view('user/pages/formulir',['formulirs'=> $Formulir]);
+});
+
+Route::get('/profil', function () {
+    return view('user/pages/profil');
+});
+
+Route::get('/kontak', function () {
+    return view('user/pages/kontak');
+});
+
 Route::get('/admin', function () {
     return view('admin/pages/main');
 });
@@ -19,7 +32,9 @@ Route::get('/admin/manage/files', function () {
 });
 
 Route::get('/admin/manage/users',[DashboardController::class,'manageUsers']);
+
 Route::delete('/admin/manage/users/delete/{user}',[DashboardController::class,'deleteUser']);
+
 Route::post('/admin/manage/users/store',[DashboardController::class,'createUser']);
 
 Route::get('/admin/manage/users/add', function () {
@@ -27,4 +42,5 @@ Route::get('/admin/manage/users/add', function () {
 });
 
 Route::get('/admin/manage/forms', [FormulirController::class,'index']);
+
 Route::put('/admin/manage/forms/update/{id}', [FormulirController::class,'update']);
