@@ -54,7 +54,7 @@ class FormulirController extends Controller
      */
     public function update(Request $request, Formulir $formulir)
     {
-        //
+        
     }
 
     /**

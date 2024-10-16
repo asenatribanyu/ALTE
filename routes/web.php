@@ -2,10 +2,12 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FormulirController;
+use App\Models\Formulir;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('user/pages/home');
+    $Formulir = Formulir::all();
+    return view('user/pages/home',['formulirs'=> $Formulir]);
 });
 
 Route::get('/admin', function () {
@@ -25,3 +27,4 @@ Route::get('/admin/manage/users/add', function () {
 });
 
 Route::get('/admin/manage/forms', [FormulirController::class,'index']);
+Route::put('/admin/manage/forms/update/{id}', [FormulirController::class,'update']);

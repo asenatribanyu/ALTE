@@ -9,10 +9,6 @@
         <div class="w-1/2">
             @include('user.partials.carousel')
             @include('user.partials.cardOnly')
-            @include('user.partials.cardOnly')
-            @include('user.partials.cardOnly')
-            @include('user.partials.cardOnly')
-            @include('user.partials.cardOnly')
         </div>
     </div>
 @endsection

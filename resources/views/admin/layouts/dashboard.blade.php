@@ -25,6 +25,15 @@
         </div>
     </div>
     <script src="{{ asset('js/global.js') }}"></script>
+    <script>
+        function uploadFile() {
+            document.getElementById('fileInput').click();
+        }
+
+        function submitForm() {
+            document.getElementById('updateForm').submit();
+        }
+        </script>
 </body>
 
 </html>
