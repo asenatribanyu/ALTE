@@ -26,13 +26,13 @@
     </div>
     <script src="{{ asset('js/global.js') }}"></script>
     <script>
-        function uploadFile() {
-            document.getElementById('fileInput').click();
-        }
+        function uploadFile(id) {
+        document.getElementById('fileInput' + id).click();
+    }
 
-        function submitForm() {
-            document.getElementById('updateForm').submit();
-        }
+    function submitForm(id) {
+        document.getElementById('updateForm' + id).submit();
+    }
         </script>
 </body>
 

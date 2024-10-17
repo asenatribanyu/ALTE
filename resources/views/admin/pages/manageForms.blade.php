@@ -22,16 +22,16 @@
                         <td style="text-align: center">{{ $formulir->name }}</td>
                         <td style="text-align: center">{{ $formulir->updated_at->format('Y-m-d') }}</td>
                         <td style="text-align: center">
-                            <a href="/formulir/{{ $formulir->file }}"
+                            <a href="/storage/formulir/{{ $formulir->file }}"
                                 class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Unduh
                         </a>
-                        <form id="updateForm" action="/admin/manage/forms/update/{{ $formulir->id }}" method="POST" enctype="multipart/form-data" style="display:none;">
+                        <form id="updateForm{{ $formulir->id }}" action="/admin/manage/forms/{{ $formulir->id }}" method="POST" enctype="multipart/form-data" style="display:none;">
                             @csrf
-                            @method('update')
-                            <input type="file" id="fileInput" name="file" onchange="submitForm()">
+                            @method('put')
+                            <input type="file" id="fileInput{{ $formulir->id }}" name="file" onchange="submitForm({{ $formulir->id }})">
                         </form>
-                        <a href="#" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg ms-2 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600" onclick="uploadFile()">
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg ms-2 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600" onclick="uploadFile({{ $formulir->id }})">
                             Perbarui Formulir
                         </a>
                         </td>

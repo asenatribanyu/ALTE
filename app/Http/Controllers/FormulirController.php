@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Formulir;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class FormulirController extends Controller
 {
@@ -54,7 +55,23 @@ class FormulirController extends Controller
      */
     public function update(Request $request, Formulir $formulir)
     {
+        if ($request->hasFile('file')) {
+            
+            if ($formulir->file) {
+                Storage::disk('public')->delete('formulir/' . $formulir->file);
+            }
         
+            $extension = $request->file('file')->getClientOriginalExtension();
+        
+            $fileName = $formulir->name . '.' . $extension;
+        
+            $path = $request->file('file')->storeAs('formulir', $fileName, 'public');
+        
+            $formulir->update([
+                'file' => $fileName,
+            ]);
+        }
+        return redirect()->back();
     }
 
     /**

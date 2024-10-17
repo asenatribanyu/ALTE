@@ -5,12 +5,12 @@
     </div>
     <div class="overflow-y-auto h-[206px] mt-3 pr-3">
         <ul class="space-y-3 list-none">
-            @for ($i = 0; $i < 10; $i++)
+            @foreach($formulirs as $formulir)
                 <li class="flex items-center justify-between">
-                    <span>SOP Pelaksanaan Tugas Akhir 2022</span>
-                    <a href="#" class="text-red-500 hover:underline">Unduh</a>
+                    <span>{{ $formulir->name }}</span>
+                    <a href="/storage/formulir/{{ $formulir->file }}" class="text-red-500 hover:underline">Unduh</a>
                 </li>
-            @endfor
+            @endforeach
         </ul>
     </div>
 </article>

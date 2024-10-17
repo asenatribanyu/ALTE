@@ -20,12 +20,14 @@
         <div class="flex gap-2">
             <button type="button"
                 class="px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Pratinjau</button>
-            <button type="button"
+            <button type="button" onclick="window.location.href='/storage/formulir/{{ $formulir->file }}';"
                 class="px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Unduh</button>
-            <button type="button" data-modal-target="upload-form-modal" data-modal-toggle="upload-form-modal"
-                class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Unggah
-                Formulir
-            </button>
+            @auth
+                <button type="button" data-modal-target="upload-form-modal" data-modal-toggle="upload-form-modal"
+                    class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Unggah
+                    Formulir
+                </button>
+            @endauth
             @include('user.partials.uploadFormModal')
         </div>
     </article>

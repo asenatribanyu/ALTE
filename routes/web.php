@@ -41,6 +41,7 @@ Route::get('/admin/manage/users/add', function () {
     return view('admin/pages/addUsers');
 });
 
+// Route::resource('/admin/manage/forms', FormulirController::class);
 Route::get('/admin/manage/forms', [FormulirController::class,'index']);
 
-Route::put('/admin/manage/forms/update/{id}', [FormulirController::class,'update']);
+Route::put('/admin/manage/forms/{formulir}', [FormulirController::class,'update']);
