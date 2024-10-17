@@ -13,7 +13,7 @@
                         </path>
                     </svg>
                 </button>
-                <a href="#" class="flex ms-2 md:me-24">
+                <a href="/" class="flex ms-2 md:me-24">
                     <img src="{{ asset('img/PNPElektro.png') }}" class="h-10" alt="Logo" />
                 </a>
             </div>
