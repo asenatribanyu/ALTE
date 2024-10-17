@@ -23,6 +23,11 @@ Route::get('/kontak', function () {
     return view('user/pages/kontak');
 });
 
+Route::get('/artikel', function () {
+    $Formulir = Formulir::all();
+    return view('user/pages/artikel',['formulirs'=> $Formulir]);
+});
+
 Route::get('/admin', function () {
     return view('admin/pages/main');
 });
@@ -39,6 +44,10 @@ Route::post('/admin/manage/users/store',[DashboardController::class,'createUser'
 
 Route::get('/admin/manage/users/add', function () {
     return view('admin/pages/addUsers');
+});
+
+Route::get('/admin/manage/users/edit', function () {
+    return view('admin/pages/editUsers');
 });
 
 // Route::resource('/admin/manage/forms', FormulirController::class);

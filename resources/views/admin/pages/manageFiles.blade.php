@@ -1,11 +1,12 @@
 @extends('admin.layouts.dashboard')
+@section('title', 'Dokumen Mahasiswa')
 @section('dashboard')
     <div class="p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
         <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Dokumen Mahasiswa</h1>
         <small class="text-sm text-gray-900 dark:text-white">Unduh dokumen yang telah diunggah oleh
             mahasiswa.</small>
         <div class="my-2 border-t-2 border-gray-300"></div>
-        <div class="p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
+        <div class="p-3.5 bg-white rounded-lg shadow dark:bg-gray-800">
             <table id="myTable" class="w-full text-sm display dark:text-gray-400">
                 <thead class="text-black">
                     <tr>

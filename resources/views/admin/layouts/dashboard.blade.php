@@ -10,7 +10,7 @@
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <link rel="stylesheet" href="{{ asset('css/dataTables.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>Admin Dashboard</title>
+    <title>@yield('title') | Teknik Elektro</title>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900">
@@ -27,13 +27,13 @@
     <script src="{{ asset('js/global.js') }}"></script>
     <script>
         function uploadFile(id) {
-        document.getElementById('fileInput' + id).click();
-    }
+            document.getElementById('fileInput' + id).click();
+        }
 
-    function submitForm(id) {
-        document.getElementById('updateForm' + id).submit();
-    }
-        </script>
+        function submitForm(id) {
+            document.getElementById('updateForm' + id).submit();
+        }
+    </script>
 </body>
 
 </html>

@@ -33,7 +33,7 @@
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
             data-carousel-slide-to="4"></button>
     </div>
-    <button type="button"
+    {{-- <button type="button"
         class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
         data-carousel-prev>
         <span
@@ -58,5 +58,5 @@
             </svg>
             <span class="sr-only">Next</span>
         </span>
-    </button>
+    </button> --}}
 </div>

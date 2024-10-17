@@ -1,4 +1,5 @@
 @extends('admin.layouts.dashboard')
+@section('title', 'Dashboard')
 @section('dashboard')
     <div class="p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
         <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Dashboard</h1>

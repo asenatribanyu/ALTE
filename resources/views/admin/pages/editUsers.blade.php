@@ -1,10 +1,10 @@
 @extends('admin.layouts.dashboard')
-@section('title', 'Tambah Akun')
+@section('title', 'Ubah Akun')
 @section('dashboard')
     <div class="flex justify-center mt-3">
         <div class="max-w-xl p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
-            <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Tambah Akun Mahasiswa</h1>
-            <small class="text-sm text-gray-900 dark:text-white">Silahkan isi formulir dibawah ini untuk menambah Akun
+            <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Ubah Akun Mahasiswa</h1>
+            <small class="text-sm text-gray-900 dark:text-white">Silahkan isi formulir dibawah ini untuk mengubah Akun
                 Mahasiswa.</small>
             <div class="my-2 border-t-2 border-gray-300"></div>
             <form class="space-y-4 md:space-y-5" method="POST" action="/admin/manage/users/store">
@@ -31,19 +31,10 @@
                 </div>
                 <div class="mb-4">
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kata
-                        Sandi</label>
+                        Sandi Baru</label>
                     <input type="password" id="password" name="password"
                         class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Kata Sandi" required>
-                </div>
-                <div>
-                    <label for="password_comfirmation"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Konfirmasi
-                        Kata
-                        Sandi</label>
-                    <input type="password" id="password_comfirmation" name="password_confirmation"
-                        class=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Konfirmasi Kata Sandi" required>
                 </div>
                 <div class="flex gap-2">
                     <button type="button" data-modal-target="buat-akun-modal" data-modal-toggle="buat-akun-modal"
@@ -56,7 +47,7 @@
                             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                                 <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
                                     <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                        Konfirmasi Pembuatan Akun
+                                        Konfirmasi Perubahan Akun
                                     </h3>
                                     <button type="button"
                                         class="inline-flex items-center justify-center w-8 h-8 ml-auto text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -71,7 +62,7 @@
                                 </div>
                                 <div class="p-6 space-y-6">
                                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                        Apa anda yakin akan membuat Akun Mahasiswa Ini?
+                                        Apa anda yakin akan mengubah Akun Mahasiswa Ini?
                                     </p>
                                 </div>
                                 <div

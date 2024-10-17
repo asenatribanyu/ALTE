@@ -5,10 +5,10 @@
     </div>
     <div class="overflow-y-auto h-[206px] mt-3 pr-3">
         <ul class="space-y-3 list-none">
-            @foreach($formulirs as $formulir)
+            @foreach ($formulirs as $formulir)
                 <li class="flex items-center justify-between">
-                    <span>{{ $formulir->name }}</span>
-                    <a href="/storage/formulir/{{ $formulir->file }}" class="text-red-500 hover:underline">Unduh</a>
+                    <span class="text-green-700">{{ $formulir->name }}</span>
+                    <a href="/storage/formulir/{{ $formulir->file }}" class="text-blue-700 hover:underline">Unduh</a>
                 </li>
             @endforeach
         </ul>

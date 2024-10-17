@@ -5,10 +5,13 @@
                 <img src="{{ asset('img/PNPElektro.png') }}" class="h-6 mr-3 sm:h-9" alt="Logo" />
             </a>
             <div class="flex items-center gap-3 lg:order-2">
-                <a href="{{ route('register') }}" class="text-sm text-blue-600 dark:text-blue-500 hover:underline">Daftar</a>
+                <a href="{{ route('register') }}"
+                    class="text-sm text-blue-600 dark:text-blue-500 hover:underline">Daftar</a>
                 <a href="/login"
                     class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Log
                     in</a>
+                <a href="/admin"
+                    class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800">Dashboard</a>
                 @auth
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
