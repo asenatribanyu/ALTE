@@ -5,7 +5,7 @@
         <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Manajemen Akun</h1>
         <div class="flex items-center justify-between">
             <small class="text-sm text-gray-900 dark:text-white">Menambah, mengubah, atau menghapus akun mahasiswa.</small>
-            <a href="/admin/manage/users/add"
+            <a href="/admin/manage/user/create"
                 class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Tambah Akun
             </a>
@@ -32,7 +32,7 @@
                             <td style="text-align: center">{{ $user->email }}</td>
                             <td style="text-align: center">{{ $user->created_at }}</td>
                             <td style="text-align: center">
-                                <a href="/admin/manage/users/edit"
+                                <a href="/admin/manage/user/{{ $user->id }}/edit"
                                     class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600">
                                     Ubah
                                 </a>
@@ -67,7 +67,7 @@
                                                 <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Apa
                                                     anda
                                                     yakin akan menghapus user ini?</h3>
-                                                <form action="/admin/manage/users/delete/{{ $user->id }}"
+                                                <form action="/admin/manage/user/{{ $user->id }}"
                                                     method="POST">
                                                     @method('delete')
                                                     @csrf

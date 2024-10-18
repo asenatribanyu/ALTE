@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\FormulirController;
+use App\Http\Controllers\UserController;
+use App\Models\Document;
 use App\Models\Formulir;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +17,7 @@ Route::get('/form', function () {
     $Formulir = Formulir::all();
     return view('user/pages/formulir',['formulirs'=> $Formulir]);
 });
-
+Route::resource('/document', DocumentController::class);
 Route::get('/profil', function () {
     return view('user/pages/profil');
 });
@@ -36,21 +39,8 @@ Route::get('/admin/manage/files', function () {
     return view('admin/pages/manageFiles');
 });
 
-Route::get('/admin/manage/users',[DashboardController::class,'manageUsers']);
+Route::resource('/admin/manage/user',UserController::class);
 
-Route::delete('/admin/manage/users/delete/{user}',[DashboardController::class,'deleteUser']);
-
-Route::post('/admin/manage/users/store',[DashboardController::class,'createUser']);
-
-Route::get('/admin/manage/users/add', function () {
-    return view('admin/pages/addUsers');
-});
-
-Route::get('/admin/manage/users/edit', function () {
-    return view('admin/pages/editUsers');
-});
-
-// Route::resource('/admin/manage/forms', FormulirController::class);
 Route::get('/admin/manage/forms', [FormulirController::class,'index']);
 
 Route::put('/admin/manage/forms/{formulir}', [FormulirController::class,'update']);

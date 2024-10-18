@@ -7,7 +7,7 @@
             <small class="text-sm text-gray-900 dark:text-white">Silahkan isi formulir dibawah ini untuk menambah Akun
                 Mahasiswa.</small>
             <div class="my-2 border-t-2 border-gray-300"></div>
-            <form class="space-y-4 md:space-y-5" method="POST" action="/admin/manage/users/store">
+            <form class="space-y-4 md:space-y-5" method="POST" action="/admin/manage/user">
                 @csrf
                 <div class="mb-4">
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>

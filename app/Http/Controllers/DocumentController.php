@@ -28,7 +28,18 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
+        $validateData = $request->validate([
+            'tipe' => ['string'],
+            'file' => ['mimes:pdf']
+        ]);
+        $request->file('file')->store('public/document');
+
+        Document::create([
+            'tipe' => $validateData['tipe'],
+            'file' => $validateData['file']
+        ]);
+        return redirect()->back();
     }
 
     /**
