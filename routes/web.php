@@ -13,11 +13,13 @@ Route::get('/', function () {
     return view('user/pages/home',['formulirs'=> $Formulir]);
 });
 
-Route::get('/form', function () {
+Route::get('/formulir', function () {
     $Formulir = Formulir::all();
     return view('user/pages/formulir',['formulirs'=> $Formulir]);
 });
+
 Route::resource('/document', DocumentController::class);
+
 Route::get('/profil', function () {
     return view('user/pages/profil');
 });

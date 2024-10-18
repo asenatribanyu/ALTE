@@ -1,4 +1,4 @@
-<div id="large-carousel" class="relative w-full h-72" data-carousel="slide">
+<div id="large-carousel" class="relative w-full h-52 md:h-72" data-carousel="slide">
     <div class="relative h-full overflow-hidden rounded-lg">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

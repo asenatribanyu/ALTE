@@ -11,36 +11,38 @@
             </a>
         </div>
         <div class="my-2 border-t-2 border-gray-300"></div>
-        <div class="p-3.5 bg-white rounded-lg shadow dark:bg-gray-800">
+        <div class="p-3.5 bg-white rounded-lg shadow dark:bg-gray-800 overflow-x-auto">
             <table id="myTable" class="w-full text-sm display dark:text-gray-400">
                 <thead class="text-black">
                     <tr>
-                        <th style="text-align: center">No</th>
-                        <th style="text-align: center">NPM</th>
-                        <th style="text-align: center">Nama</th>
-                        <th style="text-align: center">Email</th>
-                        <th style="text-align: center">Dibuat pada</th>
-                        <th style="text-align: center">Aksi</th>
+                        <th class="text-center">No</th>
+                        <th class="text-center">NPM</th>
+                        <th class="text-center">Nama</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Dibuat pada</th>
+                        <th class="text-center">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($users as $user)
                         <tr>
-                            <td style="text-align: center">{{ $loop->iteration }}</td>
-                            <td style="text-align: center">{{ $user->npm }}</td>
-                            <td style="text-align: center">{{ $user->name }}</td>
-                            <td style="text-align: center">{{ $user->email }}</td>
-                            <td style="text-align: center">{{ $user->created_at }}</td>
-                            <td style="text-align: center">
-                                <a href="/admin/manage/user/{{ $user->id }}/edit"
-                                    class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600">
-                                    Ubah
-                                </a>
-                                <button type="button" data-modal-target="delete-user-modal"
-                                    data-modal-toggle="delete-user-modal"
-                                    class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg ms-2 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
-                                    Hapus
-                                </button>
+                            <td class="text-center">{{ $loop->iteration }}</td>
+                            <td class="text-center">{{ $user->npm }}</td>
+                            <td class="text-center">{{ $user->name }}</td>
+                            <td class="text-center">{{ $user->email }}</td>
+                            <td class="text-center">{{ $user->created_at }}</td>
+                            <td class="text-center">
+                                <div class="flex items-center justify-center">
+                                    <a href="/admin/manage/user/{{ $user->id }}/edit"
+                                        class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600">
+                                        Ubah
+                                    </a>
+                                    <button type="button" data-modal-target="delete-user-modal"
+                                        data-modal-toggle="delete-user-modal"
+                                        class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg ms-2 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                                        Hapus
+                                    </button>
+                                </div>
                                 <div id="delete-user-modal" tabindex="-1"
                                     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                                     <div class="relative w-full max-w-md max-h-full p-4">
@@ -67,8 +69,7 @@
                                                 <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Apa
                                                     anda
                                                     yakin akan menghapus user ini?</h3>
-                                                <form action="/admin/manage/user/{{ $user->id }}"
-                                                    method="POST">
+                                                <form action="/admin/manage/user/{{ $user->id }}" method="POST">
                                                     @method('delete')
                                                     @csrf
                                                     <button data-modal-hide="delete-user-modal" type="submit"
@@ -77,8 +78,9 @@
                                                     </button>
                                                 </form>
                                                 <button data-modal-hide="delete-user-modal" type="button"
-                                                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Tidak,
-                                                    batal</button>
+                                                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                                    Tidak, batal
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

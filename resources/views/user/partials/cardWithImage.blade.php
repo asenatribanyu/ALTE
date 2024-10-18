@@ -1,7 +1,7 @@
 <article
     class="w-full p-3.5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
     <img src="https://images.pexels.com/photos/2816903/pexels-photo-2816903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Thumbnail" class="object-cover w-full mb-2 rounded-lg h-72">
+        alt="Thumbnail" class="object-cover w-full mb-2 rounded-lg h-52 md:h-72">
     @include('user.partials.badge')
     <a href="/artikel">
         <h5 class="my-2 text-2xl font-semibold tracking-tight text-gray-900 hover:underline dark:text-white">Lorem ipsum

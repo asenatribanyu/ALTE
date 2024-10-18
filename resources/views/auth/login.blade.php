@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>Login</title>
+    <title>Login | Arsip Lab Teknik Elektro</title>
 </head>
 
-<body class="flex items-center justify-center h-screen bg-gray-50 dark:bg-gray-900">
+<body class="flex items-center justify-center h-screen px-6 bg-gray-50 dark:bg-gray-900 md:px-0">
     <section class="container mx-auto">
         <div class="flex flex-col items-center justify-center">
             <a href="/" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">

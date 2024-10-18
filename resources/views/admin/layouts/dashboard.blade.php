@@ -10,7 +10,7 @@
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <link rel="stylesheet" href="{{ asset('css/dataTables.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>@yield('title') | Teknik Elektro</title>
+    <title>@yield('title') | Arsip Lab Teknik Elektro</title>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900">
@@ -18,7 +18,7 @@
     <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
         @include('admin.partials.dashboardSidebar')
         <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
-            <main class="px-3 pt-3">
+            <main class="px-3 pt-3 mt-3">
                 @yield('dashboard')
             </main>
             @include('admin.partials.dashboardFooter')

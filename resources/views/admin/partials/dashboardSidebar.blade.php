@@ -18,7 +18,7 @@
             </li> --}}
             <li>
                 <a href="/admin/manage/files"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    class="flex items-center p-2 {{ request()->is('admin/manage/files') ? 'text-blue-700 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-blue-900' : 'text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700' }} group">
                     <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         fill="currentColor" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@
             </li>
             <li>
                 <a href="/admin/manage/user"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    class="flex items-center p-2 {{ request()->is('admin/manage/user') || request()->is('admin/manage/user/create') ? 'text-blue-700 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-blue-900' : 'text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700' }} group">
                     <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         fill="currentColor" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@
             </li>
             <li>
                 <a href="/admin/manage/forms"
-                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    class="flex items-center p-2 {{ request()->is('admin/manage/forms') ? 'text-blue-700 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-blue-900' : 'text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700' }} group">
                     <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         fill="currentColor" viewBox="0 0 24 24">

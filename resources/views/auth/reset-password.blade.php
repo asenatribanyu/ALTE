@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>Atur Ulang Password | Teknik Elektro</title>
+    <title>Atur Ulang Password | Arsip Lab Teknik Elektro</title>
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900">
+<body class="px-6 bg-gray-50 dark:bg-gray-900 md:px-0">
     <section>
         <div class="flex flex-col items-center justify-center min-h-screen">
             <a href="/" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">

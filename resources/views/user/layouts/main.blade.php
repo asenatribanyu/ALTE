@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>@yield('title') | Teknik Elektro</title>
+    <title>@yield('title') | Arsip Lab Teknik Elektro</title>
 </head>
 
 <body class=" bg-gray-50 dark:bg-gray-900">
