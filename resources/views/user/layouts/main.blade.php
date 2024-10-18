@@ -17,9 +17,6 @@
         @yield('content')
     </div>
     @include('user.partials.footer')
-
-    <script src="{{ asset('js/global.js') }}"></script>
-    <script src="{{ asset('js/carousel.js') }}"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 @extends('user.layouts.main')
 @section('title', 'Kontak')
 @section('content')
-    <div class="container mx-auto my-5">
+    <div class="mx-auto my-5 max-w-7xl">
         <div
             class="max-w-screen-lg p-5 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="border-b-2 border-gray-200 dark:border-gray-700">
