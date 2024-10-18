@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Document;
+use App\Models\Artikel;
 use Illuminate\Http\Request;
 
-class DocumentController extends Controller
+class ArtikelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,24 +28,13 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
-        $validateData = $request->validate([
-            'tipe' => ['string'],
-            'file' => ['mimes:pdf']
-        ]);
-        $path = $request->file('file')->store('document','public');
-
-        Document::create([
-            'user_id'=> auth()->guard('web')->user()->id,
-            'file' => $path,
-            'tipe' => $validateData['tipe'],    
-        ]);
-        return redirect()->back();
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Document $document)
+    public function show(Artikel $artikel)
     {
         //
     }
@@ -53,7 +42,7 @@ class DocumentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Document $document)
+    public function edit(Artikel $artikel)
     {
         //
     }
@@ -61,7 +50,7 @@ class DocumentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Document $document)
+    public function update(Request $request, Artikel $artikel)
     {
         //
     }
@@ -69,7 +58,7 @@ class DocumentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Document $document)
+    public function destroy(Artikel $artikel)
     {
         //
     }

@@ -4,11 +4,11 @@
     <div class="container mx-auto">
         @include('user.partials.hero')
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
-            @for ($i = 0; $i < 5; $i++)
+            @foreach ($artikels as $artikel)
                 <div>
                     @include('user.partials.cardWithImage')
                 </div>
-            @endfor
+            @endforeach
         </div>
     </div>
 

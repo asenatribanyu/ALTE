@@ -11,6 +11,12 @@
                     <a href="/storage/formulir/{{ $formulir->file }}" class="text-blue-700 hover:underline">Unduh</a>
                 </li>
             @endforeach
+            @foreach ($artikels as $artikel)
+            <li class="flex items-center justify-between">
+                <span class="text-green-700">{{ $artikel->judul }}</span>
+                <a href="/storage/{{ $artikel->file }}" class="text-blue-700 hover:underline">Unduh</a>
+            </li>
+            @endforeach
         </ul>
     </div>
 </article>

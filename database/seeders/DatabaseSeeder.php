@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Artikel;
 use App\Models\Formulir;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -36,6 +37,62 @@ class DatabaseSeeder extends Seeder
         ]);Formulir::create([
             'name' => 'Daftar Inventaris Alat Laboratorium',
             'file' => 'daftar_inventaris_alat_labor.pdf'
+        ]);
+
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Kata Pengantar',
+            'file' => 'artikel/Kata Pengantar.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Panduan Keselamatan',
+            'file' => 'artikel/Panduan Keselamatan.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosdur Inventaris Peralatan Laboratorium',
+            'file' => 'artikel/Prosdur inventaris peralatan labor.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosedur Izin Melaksanakan Tugas Akhir di Laboratorium',
+            'file' => 'artikel/Prosedur izin melaksanakan tugas akhir di laboratorium.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosedur Keselamatan Kegiatan Laboratorium',
+            'file' => 'artikel/Prosedur keselamatan kegiatan laboratorium.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosedur Pelaksanaan Praktikum',
+            'file' => 'artikel/prosedur pelaksanaan praktikum.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosedur Peminjaman Peralatan Laboratorium',
+            'file' => 'artikel/Prosedur peminjaman peralatan Labor.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosedur Pengadaan Bahan Habis Pakai Laboratorium',
+            'file' => 'artikel/Prosedur pengadaan bahan habis pakai laboratorium.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Prosedur Perbaikan Alat Laboratorium',
+            'file' => 'artikel/prosedur perbaikan alat labor.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Sturktur Organisasi',
+            'file' => 'artikel/sturktur organisasi.pdf'
+        ]);
+        Artikel::create([
+            'author' => 'Admin',
+            'judul' => 'Tata Tertib Praktikum',
+            'file' => 'artikel/tata tertib praktikum.pdf'
         ]);
     }
 }

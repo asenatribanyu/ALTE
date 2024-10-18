@@ -14,23 +14,27 @@
                         <th class="text-center">Nama</th>
                         <th class="text-center">Email</th>
                         <th class="text-center">Tipe Dokumen</th>
+                        <th class="text-center">Tanggal diunggah</th>
                         <th class="text-center">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($documents as $document)
                     <tr>
-                        <td class="text-center">1</td>
-                        <td class="text-center">0620101035</td>
-                        <td class="text-center">Nino Nakano</td>
-                        <td class="text-center">Nino@noreply.com</td>
-                        <td class="text-center">SOP Labor</td>
+                        <td class="text-center">{{ $loop->iteration }}</td>
+                        <td class="text-center">{{ $document->user->id }}</td>
+                        <td class="text-center">{{ $document->user->name }}</td>
+                        <td class="text-center">{{ $document->user->email }}</td>
+                        <td class="text-center">{{ $document->tipe }}</td>
+                        <td class="text-center">{{ $document->created_at }}</td>
                         <td class="text-center">
-                            <button type="button"
+                            <button type="button" onclick="window.location.href='/storage/{{ $document->file }}';"
                                 class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Unduh
                             </button>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
