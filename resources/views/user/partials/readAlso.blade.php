@@ -1,5 +1,5 @@
 <div class="max-w-lg p-5 mb-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/artikel">
+    <a href="/artikel/{{ $artikel->id }}">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $artikel->judul }}</h5>
     </a>
     @include('user.partials.badge')

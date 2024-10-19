@@ -7,8 +7,10 @@
                     {{ $artikelPilih->judul }}
                 </h1>
                 @include('user.partials.badge')
-                <img src="https://images.pexels.com/photos/1628061/pexels-photo-1628061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Thumbnail" class="object-cover w-full mt-3 rounded-lg">
+                @foreach ($artikelPilih->artikelfile as $file)
+                    <img src="{{ asset('storage/' . $file->file) }}"
+                    alt="Thumbnail" class="object-cover w-full mt-3 rounded-lg border border-gray-300">
+                @endforeach  
                 <p class="my-3 text-justify text-gray-500 dark:text-gray-400">
                     {{ $artikelPilih->deskripsi }}
                 </p>
