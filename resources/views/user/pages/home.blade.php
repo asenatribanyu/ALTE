@@ -2,6 +2,7 @@
 @section('title', 'Beranda')
 @section('content')
     <div class="mx-auto max-w-7xl">
+        @include('user.partials.jumbotron')
         @include('user.partials.hero')
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
             @foreach ($artikels as $artikel)

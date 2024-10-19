@@ -4,7 +4,7 @@
     <div class="mx-auto my-5 max-w-7xl">
         <div
             class="max-w-screen-lg p-5 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <div class="border-b-2 border-gray-200 dark:border-gray-700">
+            <div class="border-b-4 border-gray-200 dark:border-gray-700">
                 <h1 class="pb-2 text-3xl font-semibold dark:text-white">Kontak Kami</h1>
             </div>
             <section class="mt-5">

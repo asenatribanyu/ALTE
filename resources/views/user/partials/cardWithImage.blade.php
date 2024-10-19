@@ -5,10 +5,12 @@
     @include('user.partials.badge')
     <a href="/artikel/{{ $artikel->id }}">
         <h5 class="my-2 text-2xl font-semibold tracking-tight text-gray-900 hover:underline dark:text-white">
-            {{$artikel->judul}}</h5>
+            {{ $artikel->judul }}</h5>
     </a>
-    <p class="mb-1 font-normal text-gray-500 dark:text-gray-400">{{$artikel->deskripsi}}</p>
-    <a href="/artikel/{{ $artikel->id }}" class="inline-flex items-center font-medium text-blue-600 text-md hover:underline">
+    <p class="mb-1 font-normal text-gray-500 dark:text-gray-400">
+        {{ \Illuminate\Support\Str::limit($artikel->deskripsi, 225, '...') }}</p>
+    <a href="/artikel/{{ $artikel->id }}"
+        class="inline-flex items-center font-medium text-blue-600 text-md hover:underline">
         Lihat selengkapnya
         <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 18 18">

@@ -25,8 +25,15 @@ Route::get('/formulir', function () {
 
 Route::resource('/document', DocumentController::class);
 
-Route::get('/profil', function () {
-    return view('user/pages/profil');
+Route::get('/struktur-organisasi', function () {
+    $Formulir = Formulir::all();
+    $artikel = Artikel::all();
+    $randomArtikels = Artikel::inrandomorder()->take(3)->get();
+    return view('user/pages/profilOrganisasi',[
+        'formulirs'=> $Formulir,
+        'artikels' => $artikel,
+        'randomArtikels' => $randomArtikels
+    ]);
 });
 
 Route::get('/kontak', function () {
