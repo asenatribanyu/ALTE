@@ -1,7 +1,7 @@
 @extends('user.layouts.main')
-@section('title', 'Artikel')
+@section('title', 'Struktur Organisasi')
 @section('content')
-    <div class="mx-auto max-w-7xl">
+    <div class="w-full mx-auto sm:max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
         @include('user.partials.hero')
         @include('user.partials.strukturOrganisasi')
     </div>

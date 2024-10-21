@@ -51,6 +51,16 @@
                             aria-current="page">Beranda</a>
                     </li>
                     <li>
+                        <a href="/standar-operasi-prosedur"
+                            class="block py-2 pl-3 pr-4 {{ request()->is('standar-operasi-prosedur') ? 'text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700' }}"
+                            aria-current="page">SOP</a>
+                    </li>
+                    <li>
+                        <a href="/struktur-organisasi"
+                            class="block py-2 pl-3 pr-4 {{ request()->is('struktur-organisasi') ? 'text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700' }}"
+                            aria-current="page">Struktur Organisasi</a>
+                    </li>
+                    {{-- <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
                             class="flex items-center justify-between w-full px-3 py-2 text-gray-700 rounded {{ request()->is('visi-dan-misi') || request()->is('struktur-organisasi')
                                 ? 'text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500'
@@ -64,11 +74,11 @@
                             class="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownLargeButton">
-                                {{-- <li>
+                                <li>
                                     <a href="/visi-dan-misi"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi
                                         dan Misi</a>
-                                </li> --}}
+                                </li>
                                 <li>
                                     <a href="/struktur-organisasi"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Struktur
@@ -76,7 +86,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>
+                    </li> --}}
                     <li>
                         <a href="/formulir"
                             class="block py-2 pl-3 pr-4 {{ request()->is('formulir') ? 'text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700' }}">Formulir</a>
@@ -84,7 +94,7 @@
                     <li>
                         <a href="/kontak"
                             class="block py-2 pl-3 pr-4 {{ request()->is('kontak') ? 'text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700' }}">Kontak
-                            Kami</a>
+                        </a>
                     </li>
                 </ul>
             </div>

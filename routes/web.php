@@ -18,6 +18,11 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/standar-operasi-prosedur', function () {
+    $artikel = Artikel::all();
+    return view('user/pages/sop',['artikels' => $artikel,]);
+});
+
 Route::get('/formulir', function () {
     $Formulir = Formulir::all();
     return view('user/pages/formulir',['formulirs'=> $Formulir]);

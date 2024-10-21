@@ -1,4 +1,4 @@
-<div class="flex items-center gap-2 my-2.5">
+<div class="flex flex-wrap items-center gap-2 my-2.5">
     <span
         class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">
         <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"

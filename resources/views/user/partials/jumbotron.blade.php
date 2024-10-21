@@ -1,9 +1,10 @@
 <section>
-    <div class="w-full px-12 mx-auto my-10 text-center">
+    <div class="w-full px-12 mx-auto my-10 text-center lg:my-20">
         <h1
             class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Standar Operasi Prosedur (SOP) Laboratorium</h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 md:px-32 dark:text-gray-400">
+        <p
+            class="mb-8 text-sm font-normal text-gray-500 lg:text-xl lg:px-32 sm:text-sm md:text-xl xl:text-xl dark:text-gray-400">
             SOP ini mengatur berbagai prosedur di Laboratorium Mesin Listrik, Program Studi Teknik Listrik, Politeknik
             Negeri Padang. Beberapa prosedur yang tercakup meliputi: tata tertib laboratorium, aturan praktikum,
             struktur organisasi, prosedur keselamatan, pelaksanaan praktikum, inventarisasi peralatan, izin tugas akhir,

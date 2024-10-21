@@ -8,12 +8,12 @@
                 </h1>
                 @include('user.partials.badge')
                 @foreach ($artikelPilih->artikelfile as $file)
-                    <img src="{{ asset('storage/' . $file->file) }}"
-                    alt="Thumbnail" class="object-cover w-full mt-3 rounded-lg border border-gray-300">
-                @endforeach  
-                <p class="my-3 text-justify text-gray-500 dark:text-gray-400">
+                    <img src="{{ asset('storage/' . $file->file) }}" alt="Thumbnail"
+                        class="object-cover w-full mt-3 border border-gray-300 rounded-lg">
+                @endforeach
+                {{-- <p class="my-3 text-justify text-gray-500 dark:text-gray-400">
                     {{ $artikelPilih->deskripsi }}
-                </p>
+                </p> --}}
             </div>
         </div>
         <div class="w-full md:w-4/12">
