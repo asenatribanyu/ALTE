@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $Formulir = Formulir::all();
-    $artikel = Artikel::all();
+    $artikel = Artikel::inrandomorder()->take(4)->get();
     return view('user/pages/home',[
         'formulirs'=> $Formulir,
         'artikels' => $artikel,
