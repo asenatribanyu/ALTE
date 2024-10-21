@@ -55,6 +55,9 @@ class FormulirController extends Controller
      */
     public function update(Request $request, Formulir $formulir)
     {
+        $request->validate([
+            'file' => ['mimes:pdf']
+        ]);
         if ($request->hasFile('file')) {
             
             if ($formulir->file) {
@@ -71,7 +74,7 @@ class FormulirController extends Controller
                 'file' => $fileName,
             ]);
         }
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Form Updated Successfully.');
     }
 
     /**

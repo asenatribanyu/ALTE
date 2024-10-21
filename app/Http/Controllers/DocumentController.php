@@ -39,7 +39,7 @@ class DocumentController extends Controller
             'file' => $path,
             'tipe' => $validateData['tipe'],    
         ]);
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Form successfully submitted.');
     }
 
     /**

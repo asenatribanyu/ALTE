@@ -55,7 +55,7 @@ class UserController extends Controller
             'role' => 'mahasiswa',
         ]);
 
-        return redirect()->back()->with('success', 'User created successfully!');
+        return redirect()->back()->with('success', 'User Created Successfully.');
     }
 
     /**
@@ -94,7 +94,7 @@ class UserController extends Controller
 
         $user->update($validatedData);
 
-        return redirect()->back()->with('success', 'User updated successfully!');
+        return redirect()->back()->with('success', 'User Updated Successfully.');
     }
 
     /**
@@ -103,7 +103,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'User Deleted Successfully.');
 
     }
 }

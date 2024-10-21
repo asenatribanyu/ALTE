@@ -1,6 +1,12 @@
 @extends('admin.layouts.dashboard')
 @section('title', 'Ubah Akun')
 @section('dashboard')
+    @if (session('success'))
+        @include('alert.successAlert')
+    @endif
+    @if ($errors->any())
+        @include('alert.dangerAlert')
+    @endif
     <div class="flex justify-center mt-3">
         <div class="max-w-xl p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
             <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Ubah Akun Mahasiswa</h1>

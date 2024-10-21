@@ -1,6 +1,12 @@
 @extends('admin.layouts.dashboard')
 @section('title', 'Manajemen Akun')
 @section('dashboard')
+    @if (session('success'))
+        @include('alert.successAlert')
+    @endif
+    @if ($errors->any())
+        @include('alert.dangerAlert')
+    @endif
     <div class="p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
         <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Manajemen Akun</h1>
         <div class="flex items-center justify-between">
@@ -30,7 +36,7 @@
                             <td class="text-center">{{ $user->npm }}</td>
                             <td class="text-center">{{ $user->name }}</td>
                             <td class="text-center">{{ $user->email }}</td>
-                            <td class="text-center">{{ $user->created_at }}</td>
+                            <td class="text-center">{{ $user->created_at->format('Y-m-d') }}</td>
                             <td class="text-center">
                                 <div class="flex items-center justify-center">
                                     <a href="/admin/manage/user/{{ $user->id }}/edit"

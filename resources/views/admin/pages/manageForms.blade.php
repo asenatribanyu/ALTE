@@ -1,6 +1,12 @@
 @extends('admin.layouts.dashboard')
 @section('title', 'Pengelolaan Formulir')
 @section('dashboard')
+    @if (session('success'))
+        @include('alert.successAlert')
+    @endif
+    @if ($errors->any())
+        @include('alert.dangerAlert')
+    @endif
     <div class="p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
         <h1 class="text-3xl font-medium text-gray-900 dark:text-white">Pengelolaan Formulir</h1>
         <small class="text-sm text-gray-900 dark:text-white">Perbaharui formulir yang akan diunduh mahasiswa jika ada
