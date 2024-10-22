@@ -11,9 +11,8 @@
     <title>@yield('title') | Arsip Lab Teknik Elektro</title>
 </head>
 
-<body class=" bg-gray-50 dark:bg-gray-900">
+<body class="bg-gray-50 dark:bg-gray-900">
     @include('user.partials.navbar')
-
     <div class="max-md:px-2">
         @yield('content')
     </div>

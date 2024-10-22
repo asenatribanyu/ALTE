@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $Formulir = Formulir::all();
-    $artikel = Artikel::inrandomorder()->take(4)->get();
+    $artikel = Artikel::inrandomorder()->take(6)->get();
     return view('user/pages/home',[
         'formulirs'=> $Formulir,
         'artikels' => $artikel,
@@ -34,7 +34,7 @@ Route::resource('/document', DocumentController::class);
 Route::get('/struktur-organisasi', function () {
     $Formulir = Formulir::all();
     $artikel = Artikel::all();
-    $randomArtikels = Artikel::inrandomorder()->take(3)->get();
+    $randomArtikels = Artikel::inrandomorder()->take(4)->get();
     return view('user/pages/profilOrganisasi',[
         'formulirs'=> $Formulir,
         'artikels' => $artikel,
@@ -46,11 +46,11 @@ Route::get('/kontak', function () {
     return view('user/pages/kontak');
 });
 
-Route::get('/artikel/{id}', function ($id) {
+Route::get('/standar-operasi-prosedur/{id}', function ($id) {
     $Formulir = Formulir::all();
     $artikel = Artikel::all();
     $artikelPilih = Artikel::find($id);
-    $randomArtikels = Artikel::where('id','<>',$id)->inrandomorder()->take(3)->get();
+    $randomArtikels = Artikel::where('id','<>',$id)->inrandomorder()->take(4)->get();
     return view('user/pages/artikel',[
         'formulirs'=> $Formulir,
         'artikels' => $artikel,

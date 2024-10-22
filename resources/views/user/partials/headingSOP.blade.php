@@ -2,7 +2,7 @@
     <div class="flex items-center justify-between">
         <h1 class="pb-2 text-3xl font-semibold dark:text-white">Standar Operasi Prosedur</h1>
         <a href="/standar-operasi-prosedur"
-            class="inline-flex items-center font-medium text-blue-600 text-md hover:underline">
+            class="inline-flex items-center hidden font-medium text-blue-600 text-md hover:underline lg:visible">
             Lihat semua SOP
             <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 18 18">

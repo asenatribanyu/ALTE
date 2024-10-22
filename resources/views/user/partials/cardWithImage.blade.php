@@ -1,15 +1,15 @@
 <article
     class="w-full p-3.5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-    <img src="https://images.pexels.com/photos/2816903/pexels-photo-2816903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Thumbnail" class="object-cover w-full mb-2 rounded-lg md:h-48 lg:h-72">
+    <img src="{{ asset('storage/' . $artikel->thumbnail) }}" alt="Thumbnail"
+        class="object-cover w-full mb-2 border border-gray-300 rounded-lg md:h-48 lg:h-72">
     @include('user.partials.badge')
-    <a href="/artikel/{{ $artikel->id }}">
+    <a href="/standar-operasi-prosedur/{{ $artikel->id }}">
         <h5 class="my-2 text-2xl font-semibold tracking-tight text-gray-900 hover:underline dark:text-white">
             {{ $artikel->judul }}</h5>
     </a>
     <p class="mb-1 font-normal text-gray-500 dark:text-gray-400">
         {{ \Illuminate\Support\Str::limit($artikel->deskripsi, 225, '...') }}</p>
-    <a href="/artikel/{{ $artikel->id }}"
+    <a href="/standar-operasi-prosedur/{{ $artikel->id }}"
         class="inline-flex items-center font-medium text-blue-600 text-md hover:underline">
         Lihat selengkapnya
         <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

@@ -68,13 +68,15 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Panduan Keselamatan',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/Panduan Keselamatan.pdf'
+            'file' => 'artikel/Panduan Keselamatan.pdf',
+            'thumbnail' => 'thumbnail/panduan keselamatan kegiatan praktikum.png'
         ]);
 
         Artikelfile::create([
             'artikel_id' => '1',
             'file' => 'artikelfile/Panduan Keselamatan-1.png'
         ]);
+
         Artikelfile::create([
             'artikel_id' => '1',
             'file' => 'artikelfile/Panduan Keselamatan-2.png'
@@ -84,12 +86,15 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Prosedur Inventaris Peralatan Laboratorium',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/Prosdur inventaris peralatan labor.pdf'
+            'file' => 'artikel/Prosdur inventaris peralatan labor.pdf',
+            'thumbnail' => 'thumbnail/prosedur inventaris peralatan labor.png'
         ]);
+
         Artikelfile::create([
             'artikel_id' => '2',
             'file' => 'artikelfile/Prosedur inventaris peralatan labor-1.png'
         ]);
+
         Artikelfile::create([
             'artikel_id' => '2',
             'file' => 'artikelfile/Prosedur inventaris peralatan labor-2.png'
@@ -99,7 +104,8 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Prosedur Izin Melaksanakan Tugas Akhir di Laboratorium',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/Prosedur izin melaksanakan tugas akhir di laboratorium.pdf'
+            'file' => 'artikel/Prosedur izin melaksanakan tugas akhir di laboratorium.pdf',
+            'thumbnail' => 'thumbnail/prosedur melaksanakan tugas akhir di labor.png'
         ]);
 
         Artikelfile::create([
@@ -111,7 +117,8 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Prosedur Keselamatan Kegiatan Laboratorium',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/Prosedur keselamatan kegiatan laboratorium.pdf'
+            'file' => 'artikel/Prosedur keselamatan kegiatan laboratorium.pdf',
+            'thumbnail' => 'thumbnail/prosedur keselamatan kegiatan di labor.png'
         ]);
 
          Artikelfile::create([
@@ -127,7 +134,8 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Prosedur Pelaksanaan Praktikum',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/prosedur pelaksanaan praktikum.pdf'
+            'file' => 'artikel/prosedur pelaksanaan praktikum.pdf',
+            'thumbnail' => 'thumbnail/prosedur pelaksanaan praktikum.png'
         ]);
 
         Artikelfile::create([
@@ -143,7 +151,8 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Prosedur Peminjaman Peralatan Laboratorium',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/Prosedur peminjaman peralatan Labor.pdf'
+            'file' => 'artikel/Prosedur peminjaman peralatan Labor.pdf',
+            'thumbnail' => 'thumbnail/prosedur peminjaman peralatan labor.png'
         ]);
 
         Artikelfile::create([
@@ -159,7 +168,8 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Prosedur Pengadaan Bahan Habis Pakai Laboratorium',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/Prosedur pengadaan bahan habis pakai laboratorium.pdf'
+            'file' => 'artikel/Prosedur pengadaan bahan habis pakai laboratorium.pdf',
+            'thumbnail' => 'thumbnail/prosedur pengadaan bahan habis pakai labor.png'
         ]);
         Artikelfile::create([
             'artikel_id' => '7',
@@ -168,9 +178,10 @@ class DatabaseSeeder extends Seeder
 
         Artikel::create([
             'author' => 'Admin',
-            'judul' => 'Prosedur Perbaikan Alat Laboratorium',
+            'judul' => 'Prosedur Perbaikan Peralatan Laboratorium',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/prosedur perbaikan alat labor.pdf'
+            'file' => 'artikel/prosedur perbaikan alat labor.pdf',
+            'thumbnail' => 'thumbnail/prosedur perbaikan peralatan labor.png'
         ]);
 
         Artikelfile::create([
@@ -182,7 +193,8 @@ class DatabaseSeeder extends Seeder
             'author' => 'Admin',
             'judul' => 'Sturktur Organisasi',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/sturktur organisasi.pdf'
+            'file' => 'artikel/sturktur organisasi.pdf',
+            'thumbnail' => 'thumbnail/struktur organisasi.png'
         ]);
 
         Artikelfile::create([
@@ -196,9 +208,10 @@ class DatabaseSeeder extends Seeder
 
         Artikel::create([
             'author' => 'Admin',
-            'judul' => 'Tata Tertib Praktikum',
+            'judul' => 'Tata Tertib Pelaksanaan Praktikum',
             'deskripsi' => 'Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum interdum. Ullamcorper porta risus rhoncus nisl donec porttitor senectus cubilia. Inceptos habitasse felis scelerisque hendrerit scelerisque scelerisque. Platea faucibus faucibus ligula magna donec, leo at inceptos. Placerat ridiculus consequat feugiat et dui. Varius feugiat mi; consequat imperdiet ad leo in? Porttitor elit risus tempus aliquet, vel sem.',
-            'file' => 'artikel/tata tertib praktikum.pdf'
+            'file' => 'artikel/tata tertib praktikum.pdf',
+            'thumbnail' => 'thumbnail/tata tertib pelaksanaan praktikum.png'
         ]);
 
         Artikelfile::create([
