@@ -10,7 +10,7 @@
 
 <body>
     <embed src="{{ asset('storage/formulir/' . $file->file . '#toolbar=0') }}" type="application/pdf" width="100%"
-        height="100vh">
+        height="1000px">
 </body>
 
 </html>

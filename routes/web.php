@@ -19,8 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/formulir/pratinjau/{file}', function ($file) {
-    $Formulir = Formulir::find($file);
-    return view('user/pages/preview', ['file' => $Formulir]);
+    $Formulir = Formulir::where('file', $file)->first();
+    return view('user/pages/pratinjau', ['file' => $Formulir]);
 });
 
 Route::get('/standar-operasi-prosedur', function () {
