@@ -19,7 +19,8 @@
             @else
                 PDF
             @endif
-
+            @else
+            PDF
         @endif
     </span>
     @auth
