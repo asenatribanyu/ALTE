@@ -5,15 +5,22 @@
             viewBox="0 0 24 24">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM13 9V3.5L18.5 9H13z" />
         </svg>
-        @if (auth()->user()->document()->latest()->first()->created_at->diffInDays(now()) > 7 && auth()->user()->document()->latest()->first()->tipe == $formulir->name )
-        PDF
-        @elseif(auth()->user()->document()->latest()->first()->created_at->diffInDays(now()) <= 7 && auth()->user()->document()->latest()->first()->tipe == $formulir->name)
-        {{ Str::after(auth()->user()->document()->latest()->first()->file,'document/') }}
+        @auth
+            @if(auth()->user()->document()->latest()->first())
+                @if (auth()->user()->document()->latest()->first()->created_at->diffInDays(now()) > 7 && auth()->user()->document()->latest()->first()->tipe == $formulir->name )
+                PDF
+                @elseif(auth()->user()->document()->latest()->first()->created_at->diffInDays(now()) <= 7 && auth()->user()->document()->latest()->first()->tipe == $formulir->name)
+                {{ Str::after(auth()->user()->document()->latest()->first()->file,'document/') }}
+        @endauth
+            @else
+            PDF
+        @endif
         @else
         PDF
-        @endif
-        
+        @endif   
     </span>
+    @auth
+    @if(auth()->user()->document()->latest()->first())
     @if (auth()->user()->document()->latest()->first()->created_at->diffInDays(now()) > 7 && auth()->user()->document()->latest()->first()->tipe == $formulir->name)
         
     @elseif(auth()->user()->document()->latest()->first()->created_at->diffInDays(now()) <= 7 && auth()->user()->document()->latest()->first()->tipe == $formulir->name)
@@ -35,4 +42,6 @@
         {{ auth()->user()->document()->latest()->first()->created_at->format('Y-m-d') }}
     </span>
     @endif
+    @endif
+    @endauth
 </div>
