@@ -18,6 +18,11 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/formulir/pratinjau/{file}', function ($file) {
+    $Formulir = Formulir::find($file);
+    return view('user/pages/preview', ['file' => $Formulir]);
+});
+
 Route::get('/standar-operasi-prosedur', function () {
     $artikel = Artikel::all();
     return view('user/pages/sop',['artikels' => $artikel,]);
