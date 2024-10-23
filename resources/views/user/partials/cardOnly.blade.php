@@ -9,8 +9,8 @@
                 {{ $formulir->name }}
             </h5>
             <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Hac mi elit velit hendrerit nullam tempus dictum
-                interdum. Ullamcorper porta risus rhoncus nisl donec.
+                Silahkan isi formulir {{ $formulir->name }} dengan lengkap, lalu pindai dalam format PDF,
+                dengan ukuran file tidak melebihi 4 MB saat diunggah.
             </p>
         </div>
         <div class="flex gap-2 mt-auto">

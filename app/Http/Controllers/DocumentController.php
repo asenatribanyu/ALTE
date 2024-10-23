@@ -32,14 +32,16 @@ class DocumentController extends Controller
             'tipe' => ['string'],
             'file' => ['mimes:pdf']
         ]);
-        $path = $request->file('file')->store('document','public');
+        $originalFileName = $request->file('file')->getClientOriginalName();
+
+        $path = $request->file('file')->storeAs('document', $originalFileName, 'public');
 
         Document::create([
             'user_id'=> auth()->guard('web')->user()->id,
             'file' => $path,
             'tipe' => $validateData['tipe'],    
         ]);
-        return redirect()->back()->with('success', 'Form successfully submitted.');
+        return redirect()->back()->with('success', 'Formulir berhasil dikirim.');
     }
 
     /**

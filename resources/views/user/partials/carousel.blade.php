@@ -1,24 +1,23 @@
-<div id="large-carousel" class="relative w-full h-52 md:h-72" data-carousel="slide">
+<div id="large-carousel" class="relative w-full h-52 md:h-80" data-carousel="slide">
     <div class="relative h-full overflow-hidden rounded-lg">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="absolute inset-0 object-cover w-full h-full" alt="...">
+            <img src="{{ asset('img/PNPImg_1.jpeg') }}" class="absolute inset-0 object-cover w-full h-full" alt="...">
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="absolute inset-0 object-cover w-full h-full" alt="...">
+            <img src="{{ asset('img/PNPImg_2.jpeg') }}" class="absolute inset-0 object-cover w-full h-full"
+                alt="...">
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.pexels.com/photos/1510595/pexels-photo-1510595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="absolute inset-0 object-cover w-full h-full" alt="...">
+            <img src="{{ asset('img/PNPImg_3.jpeg') }}" class="absolute inset-0 object-cover w-full h-full"
+                alt="...">
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.pexels.com/photos/315191/pexels-photo-315191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="absolute inset-0 object-cover w-full h-full" alt="...">
+            <img src="{{ asset('img/PNPImg_4.jpeg') }}" class="absolute inset-0 object-cover w-full h-full"
+                alt="...">
         </div>
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.pexels.com/photos/259772/pexels-photo-259772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                class="absolute inset-0 object-cover w-full h-full" alt="...">
+            <img src="{{ asset('img/PNPImg_5.jpeg') }}" class="absolute inset-0 object-cover w-full h-full"
+                alt="...">
         </div>
     </div>
     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
