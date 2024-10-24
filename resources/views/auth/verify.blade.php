@@ -29,7 +29,7 @@
                             Anda tidak menerima email tersebut, klik tombol di bawah ini.</small>
                     </div>
                     @if (session('status') == 'verification-link-sent')
-                        <div class="text-blue-500">Email verifikasi telah dikirim.</div>
+                        <small class="text-blue-500">Email verifikasi telah dikirim.</small>
                     @endif
                     <form method="POST" action="{{ route('verification.send') }}">
                         @csrf
