@@ -43,13 +43,13 @@
                                         class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600">
                                         Ubah
                                     </a>
-                                    <button type="button" data-modal-target="delete-user-modal"
-                                        data-modal-toggle="delete-user-modal"
+                                    <button type="button" data-modal-target="delete-user-modal-{{ $user->id }}"
+                                        data-modal-toggle="delete-user-modal-{{ $user->id }}"
                                         class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg ms-2 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
                                         Hapus
                                     </button>
                                 </div>
-                                <div id="delete-user-modal" tabindex="-1"
+                                <div id="delete-user-modal-{{ $user->id }}" tabindex="-1"
                                     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                                     <div class="relative w-full max-w-md max-h-full p-4">
                                         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
