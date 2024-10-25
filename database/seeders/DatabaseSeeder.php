@@ -18,16 +18,16 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory(10)->create([
-            'email_verified_at' => '2024-10-14 10:28:18',
-            'role' => 'mahasiswa',
-        ]);
+        // User::factory(10)->create([
+        //     'email_verified_at' => '2024-10-14 10:28:18',
+        //     'role' => 'mahasiswa',
+        // ]);
 
         User::create([
             'name' => 'Admin',
             'npm' => '000000',
-            'password' => bcrypt('admin'),
-            'email'=> 'admin@gmail.com',
+            'password' => bcrypt('Arsiplab2024'),
+            'email'=> 'arsiplabtekniklistrik@gmail.com',
             'email_verified_at' => '2024-10-14 10:28:18',
             'role' => 'admin',
         ]);

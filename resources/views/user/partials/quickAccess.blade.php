@@ -3,7 +3,7 @@
     <div class="border-gray-200 border-b-[5px] dark:border-gray-700">
         <h1 class="pb-2 text-xl font-semibold text-black dark:text-white">Akses Cepat</h1>
     </div>
-    <div class="overflow-y-auto h-[206px] mt-3 pr-3">
+    <div class="overflow-y-auto h-[238px] mt-3 pr-3">
         <ul class="space-y-3 list-none">
             @foreach ($formulirs as $formulir)
                 <li class="flex items-center justify-between">
