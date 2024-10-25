@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Document;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\Rule;
 
@@ -102,6 +105,15 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
+        $documents = Document::where('user_id',$user->id)->get();
+        if ($documents) {
+            foreach ($documents as $document) {   
+                if ($document->file && File::exists(public_path('storage/'. $document->file))) {
+                    File::delete(public_path('storage/'. $document->file));
+                }
+                $document->delete();
+            }
+        }
         $user->delete();
         return redirect()->back()->with('success', 'User Deleted Successfully.');
 
