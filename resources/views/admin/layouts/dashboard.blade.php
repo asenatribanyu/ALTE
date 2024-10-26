@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="{{ asset('css/dataTables.css') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>@yield('title') | Arsip Lab Teknik Elektro</title>
+    <style>
+        table.dataTable thead th {
+            text-align: center !important;
+        }
+
+        table.dataTable tbody td {
+            text-align: center !important;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900">

@@ -16,19 +16,19 @@
             <table id="myTable" class="w-full text-sm display dark:text-gray-400">
                 <thead class="text-black">
                     <tr>
-                        <th class="text-center">No</th>
-                        <th class="text-center">Nama Formulir</th>
-                        <th class="text-center">Terakhir diperbaharui</th>
-                        <th class="text-center">Aksi</th>
+                        <th>No</th>
+                        <th>Nama Formulir</th>
+                        <th>Terakhir diperbaharui</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($formulirs as $formulir)
                         <tr>
-                            <td class="text-center">{{ $loop->iteration }}</td>
-                            <td class="text-center">{{ $formulir->name }}</td>
-                            <td class="text-center">{{ $formulir->updated_at->format('Y-m-d') }}</td>
-                            <td class="text-center">
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $formulir->name }}</td>
+                            <td>{{ $formulir->updated_at->format('Y-m-d') }}</td>
+                            <td>
                                 <div class="flex items-center justify-center">
                                     <a href="/storage/formulir/{{ $formulir->file }}"
                                         class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

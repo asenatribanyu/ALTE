@@ -21,23 +21,23 @@
             <table id="myTable" class="w-full text-sm display dark:text-gray-400">
                 <thead class="text-black">
                     <tr>
-                        <th class="text-center">No</th>
-                        <th class="text-center">NPM</th>
-                        <th class="text-center">Nama</th>
-                        <th class="text-center">Email</th>
-                        <th class="text-center">Dibuat pada</th>
-                        <th class="text-center">Aksi</th>
+                        <th>No</th>
+                        <th>NPM</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Dibuat pada</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($users as $user)
                         <tr>
-                            <td class="text-center">{{ $loop->iteration }}</td>
-                            <td class="text-center">{{ $user->npm }}</td>
-                            <td class="text-center">{{ $user->name }}</td>
-                            <td class="text-center">{{ $user->email }}</td>
-                            <td class="text-center">{{ $user->created_at->format('Y-m-d') }}</td>
-                            <td class="text-center">
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $user->npm }}</td>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>{{ $user->created_at->format('Y-m-d') }}</td>
+                            <td>
                                 <div class="flex items-center justify-center">
                                     <a href="/admin/manage/user/{{ $user->id }}/edit"
                                         class="inline-flex items-center px-3 py-2 text-xs font-medium text-center text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-600">
